@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* スクロールボックス */
+.box {
+  width      : 80%;             /* 横幅を200pxに指定 */
+  height     : 75px;            /* 横幅を200pxに指定 */
+  border     : 1px solid black; /* わかりやすくボーダーを引く */
+  overflow-y : scroll;          /* 縦方向にスクロール可能にする */
+}
+
+/* テーブル装飾 */
+table {
+  border          : 2px solid black;
+  border-collapse : collapse;
+  width           : 100%;
+}
+th {
+  text-align       : center;
+  border           : 1px solid black;
+  border-bottom    : 2px solid black;
+  background-color : PowderBlue;
+}
+td {
+  text-align    : left;
+  border        : 1px solid black;
+  border-top    : 1px dashed black;
+  border-bottom : 1px dashed black;
+  padding       : 5px;
+}
+
+/* リンクボタン */
+.button-1 {
+  display         : inline-block;
+  padding         : 5px 20px;
+  font-size       : 15px;
+  color           : MediumTurquoise;
+  text-decoration : none;
+  user-select     : none;
+  border          : 2px solid MediumTurquoise;
+  box-shadow      : 5px 5px MediumTurquoise;
+}
+.button-1:hover {
+  color         : white;
+  background    : MediumTurquoise;
+  box-shadow    : none;
+  transform     : translate(5px, 5px);
+}
+
+/* テーブルごとにリセットされるカウンター
+td要素にcntクラスを付けて利用 */
+table {
+  counter-reset: cnt; /* カウンターcntを0に初期化 */
+}
+td.cnt::before {
+  counter-increment : cnt;               /* +1 */
+  content           : "No."counter(cnt); /* No.を付けて表示 */
+}
+
+/* アコーディオンメニュー */
+summary {
+  display : block; /* 三角マークを消す */
+  color   : white;
+}
+summary:hover {
+  background    : lightpink;
+  color         : lightpink;
+}
+details[open] > summary {
+  background    : lightpink;
+  color         : white;
+}
+th.secret {
+  text-align       : center;
+  border           : 1px solid black;
+  border-bottom    : 2px solid black;
+  background-color : mistyrose;
+}
