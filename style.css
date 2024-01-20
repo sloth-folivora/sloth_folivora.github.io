@@ -1,4 +1,8 @@
 @charset "utf-8";
+/* 余白 */
+body {
+  margin : 5px;
+}
 
 /* スクロールボックス */
 .box {
@@ -9,18 +13,18 @@
 }
 
 /* テーブル装飾 */
-table {
+table.record {
   border          : 2px solid black;
   border-collapse : collapse;
   width           : 100%;
 }
-th {
+th.record {
   text-align       : center;
   border           : 1px solid black;
   border-bottom    : 2px solid black;
   background-color : PowderBlue;
 }
-td {
+td.record {
   text-align    : left;
   border        : 1px solid black;
   border-top    : 1px dashed black;
@@ -69,9 +73,76 @@ details[open] > summary {
   background    : lightpink;
   color         : white;
 }
+table.secret {
+  border          : 2px solid black;
+  border-collapse : collapse;
+  width           : 100%;
+}
 th.secret {
   text-align       : center;
   border           : 1px solid black;
   border-bottom    : 2px solid black;
   background-color : mistyrose;
+}
+
+/* べージトップ遷移ボタン */
+.pagetop {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+a.button-top {
+  display          : inline-block;
+  padding          : 5px 10px;
+  font-size        : 20px;
+  color            : saddlebrown;
+  font-weight      : bold;
+  text-decoration  : none;
+  user-select      : none;
+  border           : 1px solid saddlebrown;
+  box-shadow       : 3px 3px saddlebrown;
+  border-radius    : 50%;
+  background-color : PowderBlue;
+}
+
+/* ヘッダメニュー */
+#nav {
+  list-style: none;
+  overflow: hidden;
+}
+#nav li {
+  width: 40%;
+  text-align: center;
+  background-color: MediumTurquoise;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 3px;
+  border-right: 4px double saddlebrown;
+  border-bottom: 4px double saddlebrown;
+}
+#nav li a {
+  text-decoration: none;
+  color: saddlebrown;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* 見出し */
+h3 {
+  padding: 0px 10px;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: 5px solid saddlebrown;
+}
+
+/* 更新ログ */
+table.upd{
+  border  : none;
+  width   : 100%;
+}
+td.upd{
+  border-bottom : 1px solid gainsboro;
+  text-align    : left;
+  vertical-align: top;
 }
