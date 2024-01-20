@@ -1,11 +1,25 @@
-function DisplayDate() {
-  let now = new Date();
-  //年を取得する
-  var YYYY = now.getFullYear();
-  //月を取得する
-  var MM = now.getMonth()+1;
-  //日を取得する
-  var DD = now.getDate();
-  
-  alert(YYYY + "/" + MM + "/" + DD);
+function password(){
+  var pass = prompt('パスワードを入力してください。');
+  if(pass == "") {
+    return;
+  }
+  location.href = pass + '.html';
+}
+
+function goLoginPage(){
+  passwd=document.formno1.passwd.value;
+    if(passwd == "tarako"){
+      location.href="index.html";
+    }else{
+      alert('パスワードが違います');
+   }
+}
+
+function pwpage(){
+  var pw = prompt('パスワードを入力してください。');
+  if(pw == "sloth-folivora") {
+    location.href="practice.html";
+  } else {
+    return;
+  }
 }

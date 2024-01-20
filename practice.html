@@ -9,95 +9,49 @@
 
   <body>
     <script type="text/javascript" src="header.js"></script>
-    ここは、このhtml内に記述<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    a
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    あ
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>あ
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <h3>inputタグでできること</h3>
+    ボタン：<input type="button" value="ボタン"><br>
+    チェックボックス：<input type="checkbox" name="group1" value="あ">あ</label><br>
+    カラーパレット：<input type="color" name="color" value="#ffffff"><br>
+    年（西暦）/月/日時:分：<input type="datetime-local" name="datetime-local"><br>
+    年（西暦）/月/日：<input type="date" name="date"><br>
+    年　月：<input type="month" name="month"><br>
+    時:分：<input type="time" name="time"><br>
+    xx年第x週：<input type="week" name="week"><br>
+    数字：<input type="number" name="number"><br>
+    パスワード：<input type="password" name="password" maxlength="16" value="12345678"><br>
+    ラジオボタン：<input type="radio" name="radio" value="yes">はい
+    <input type="radio" name="radio" value="no">いいえ<br>
+    範囲選択：<input type="range" name="range" min="0" max="100"><br>
+    電話番号（pattern属性サンプル）：<input type="tel" neme="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="090-1234-5678"><br>
+    テキスト：<input type="text" name="text"><br>
+    <br>
+    <h3>リスト</h3>
+    <ul>
+      <li>ああ</li>
+      <li>いい</li>
+    </ul>
+    <ol>
+      <li>ああ</li>
+      <li>いい</li>
+    </ol>
+    <dl>
+      <dt>定義語
+      <dd>内容は段落下げ
+      <dt>定義語
+      <dd>内容は段落下げ
+    </dl>
+    <br>
+    <h3>簡易的な閲覧制限（サイト内の見たいページのファイル名を入力すると飛べる仕組み）</h3>
+    <form>
+      <input type="button" value="メンバーページへ" onClick="password()">
+    </form>
+    <br>
+    <h3>簡易的な閲覧制限2（正しいパスを入力すると遷移できる）</h3>
+    <form name="formno1">
+      
+      <input type="button" value="閲覧する" onClick="goLoginPage();">
+    </form>
     <br>
     <script type="text/javascript" src="footer.js"></script>
   </body>
