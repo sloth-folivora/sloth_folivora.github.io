@@ -1,6 +1,16 @@
 var html =  '<div class="box">';
     html += '  <table class="upd">';
     html += '    <tr>';
+    html += '      <td rowspan="3" class="upd">24/01/21</td>';
+    html += '      <td class="upd">『「国境なき医師団」を見に行く』、『カラオケ行こ！』 → 2024年の記録</td>';
+    html += '    </tr>';
+    html += '    <tr>';
+    html += '      <td class="upd">css調整</td>';
+    html += '    </tr>';
+    html += '    <tr>';
+    html += '      <td class="upd">『のっけから失礼します』 → 積読状況</td>';
+    html += '    </tr>';
+    html += '    <tr>';
     html += '      <td rowspan="4" class="upd">24/01/20</td>';
     html += '      <td class="upd">行頭のNoをcssでインクリメントに。便利。</td>';
     html += '    </tr>';

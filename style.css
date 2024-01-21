@@ -6,29 +6,29 @@ body {
 
 /* スクロールボックス */
 .box {
-  width      : 80%;             /* 横幅を200pxに指定 */
-  height     : 75px;            /* 横幅を200pxに指定 */
-  border     : 1px solid black; /* わかりやすくボーダーを引く */
-  overflow-y : scroll;          /* 縦方向にスクロール可能にする */
+  width      : 100%;                  /* 横幅を200pxに指定 */
+  height     : 75px;                  /* 横幅を200pxに指定 */
+  border     : 1px solid saddlebrown; /* わかりやすくボーダーを引く */
+  overflow-y : scroll;                /* 縦方向にスクロール可能にする */
 }
 
 /* テーブル装飾 */
 table.record {
-  border          : 2px solid black;
+  border          : 2px solid saddlebrown;
   border-collapse : collapse;
   width           : 100%;
 }
 th.record {
   text-align       : center;
-  border           : 1px solid black;
-  border-bottom    : 2px solid black;
+  border           : 1px solid saddlebrown;
+  border-bottom    : 2px solid saddlebrown;
   background-color : PowderBlue;
 }
 td.record {
   text-align    : left;
-  border        : 1px solid black;
-  border-top    : 1px dashed black;
-  border-bottom : 1px dashed black;
+  border        : 1px solid saddlebrown;
+  border-top    : 1px dashed saddlebrown;
+  border-bottom : 1px dashed saddlebrown;
   padding       : 5px;
 }
 
@@ -74,14 +74,14 @@ details[open] > summary {
   color         : white;
 }
 table.secret {
-  border          : 2px solid black;
+  border          : 2px solid saddlebrown;
   border-collapse : collapse;
   width           : 100%;
 }
 th.secret {
   text-align       : center;
-  border           : 1px solid black;
-  border-bottom    : 2px solid black;
+  border           : 1px solid saddlebrown;
+  border-bottom    : 2px solid saddlebrown;
   background-color : mistyrose;
 }
 
@@ -94,7 +94,7 @@ th.secret {
 a.button-top {
   display          : inline-block;
   padding          : 5px 10px;
-  font-size        : 20px;
+  font-size        : 40px;
   color            : saddlebrown;
   font-weight      : bold;
   text-decoration  : none;
@@ -107,33 +107,33 @@ a.button-top {
 
 /* ヘッダメニュー */
 #nav {
-  list-style: none;
-  overflow: hidden;
+  list-style : none;
+  overflow   : hidden;
 }
 #nav li {
-  width: 32%;
-  text-align: center;
-  background-color: MediumTurquoise;
-  float: left;
-  height: 40px;
-  line-height: 40px;
-  margin-right: 3px;
-  border-right: 4px double saddlebrown;
-  border-bottom: 4px double saddlebrown;
+  width            : 30%;
+  text-align       : center;
+  background-color : MediumTurquoise;
+  float            : left;
+  height           : 40px;
+  line-height      : 40px;
+  margin-right     : 3px;
+  border-right     : 5px double saddlebrown;
+  border-bottom    : 5px double saddlebrown;
 }
 #nav li a {
-  text-decoration: none;
-  color: saddlebrown;
-  font-weight: bold;
-  padding: 5px;
+  text-decoration : none;
+  color           : saddlebrown;
+  font-weight     : bold;
+  padding         : 5px;
 }
 
 /* 見出し */
 h3 {
-  padding: 0px 10px;/*上下 左右の余白*/
-  color: #494949;/*文字色*/
-  background: transparent;/*背景透明に*/
-  border-left: 5px solid saddlebrown;
+  padding          : 0px 10px;/*上下 左右の余白*/
+  color            : saddlebrown;/*文字色*/
+  background-color : mintcream;/*背景透明に*/
+  border-left      : 8px solid saddlebrown;
 }
 
 /* 更新ログ */
@@ -142,7 +142,7 @@ table.upd{
   width   : 100%;
 }
 td.upd{
-  border-bottom : 1px solid gainsboro;
-  text-align    : left;
-  vertical-align: top;
+  border-bottom  : 1px solid gainsboro;
+  text-align     : left;
+  vertical-align : top;
 }
