@@ -18,7 +18,7 @@ function goLoginPage(){
 function pwpage(){
   var pw = prompt('パスワードを入力してください。');
   if(pw == "sloth-folivora") {
-    location.href="practice.html";
+    location.href="mypage.html";
   } else {
     return;
   }
