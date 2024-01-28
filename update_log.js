@@ -1,6 +1,14 @@
 var html =  '<div class="box">';
     html += '  <table class="upd">';
     html += '    <tr>';
+    html += '      <td class="upd">24/01/28</td>';
+    html += '      <td class="upd">『犬人間』 → 2024年の記録</td>';
+    html += '    </tr>';
+    html += '    <tr>';
+    html += '      <td class="upd">24/01/27</td>';
+    html += '      <td class="upd">『安楽死が合法の国で起こっていること』 → 2024年の記録</td>';
+    html += '    </tr>';
+    html += '    <tr>';
     html += '      <td rowspan="2"  class="upd">24/01/25</td>';
     html += '      <td class="upd">『トリック劇場版　ラストステージ』 → 2024年の記録</td>';
     html += '    </tr>';
