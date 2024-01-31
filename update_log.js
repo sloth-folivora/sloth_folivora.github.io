@@ -1,6 +1,13 @@
 var html =  '<div class="box">';
     html += '  <table class="upd">';
     html += '    <tr>';
+    html += '      <td rowspan="2"  class="upd">24/01/31</td>';
+    html += '      <td class="upd">『トリック　劇場』 → 2024年の記録</td>';
+    html += '    </tr>';
+    html += '    <tr>';
+    html += '      <td class=upd>『火星の人（上・下）』 → 2024年の記録</td>'
+    html += '    </tr>';
+    html += '    <tr>';
     html += '      <td class="upd">24/01/28</td>';
     html += '      <td class="upd">『犬人間』 → 2024年の記録</td>';
     html += '    </tr>';
