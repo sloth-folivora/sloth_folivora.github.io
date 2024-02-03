@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* 全体設定 */
+body {
+  margin : 0px;
+}
+div.container {
+  padding-bottom : 60px;
+  box-sizing     : border-box;
+}
+
+header {
+  width            : 100%;
+  background-color : yellow;
+}
+div.main {
+  margin :10px;
+}
+footer {
+  position         : fixed;
+  bottom           : 0;
+  width            : 100%;
+  background-color : PowderBlue;
+}
+
+
+/* フッタメニュー */
+footer > nav.ftr {
+  width : 98%;
+}
+footer > nav.ftr > ul {
+  list-style      : none;
+  display         : flex;
+  align-items     : flex-start;
+  justify-content : space-between;
+}
+footer > nav.ftr > ul > li {
+  flex         : 1 0 auto;
+  text-align   : center;
+  border-right : 1px solid saddlebrown;
+}
+footer > nav.ftr > ul > li.first {
+  border-left : 1px solid saddlebrown;
+}
+footer > nav.ftr > ul > li > a {
+  display         : block;
+  text-decoration : none;
+  color           : saddlebrown;
+  font-size       : 25px;
+}
+
+
+/* 見出し */
+h2 {
+  padding          : 0px 10px;
+  color            : Teal;
+  border-left      : 10px solid Teal;
+  border-bottom    : 3px solid Teal;
+}
+h3 {
+  padding          : 0px 10px;
+  color            : saddlebrown;
+  /* background-color : mintcream; */
+  border-left      : 8px solid saddlebrown;
+  border-bottom    : 1px solid saddlebrown;
+}
+
+/* テーブル */
+table.record {
+  border          : 3px solid saddlebrown;
+  border-collapse : collapse;
+  width           : 100%;
+  counter-reset: cnt; /* カウンターcntを0に初期化 */
+}
+th.record {
+  text-align       : center;
+  color            : saddlebrown;
+  border           : 1px solid saddlebrown;
+  border-bottom    : 3px solid saddlebrown;
+  background-color : PowderBlue;
+}
+td.record {
+  text-align     : left;
+  vertical-align : top;
+  color          : saddlebrown;
+  border         : 1px solid saddlebrown;
+  padding        : 5px;
+}
+td.bold-b {
+  border-bottom : 2px solid saddlebrown;
+}
+td.cnt::before {
+  counter-increment : cnt;          /* +1 */
+  content           : counter(cnt); /* 表示 */
+}
+
+/* フラットボタン */
+.button-flat {
+  display          : inline-block;
+  padding          : 5px 20px;
+  margin           : 5px;
+  width            : 150px;
+  font-size        : 15px;
+  color            : saddlebrown;
+  text-decoration  : none;
+  user-select      : none;
+  border-left      : 10px solid saddlebrown;
+  border-right     : 10px double saddlebrown;
+  background-color : PowderBlue;
+  box-shadow       : 4px 0px 0px PowderBlue;
+}

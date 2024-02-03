@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* テーブルヘッダ固定 */
+.table_box{
+  overflow-y                 : auto;
+  height                     : 150px;
+  width                      :100%;
+  -webkit-overflow-scrolling : touch;
+}
+.sticky {
+  position                   : sticky;
+  top                        : 0;
+  left                       : 0;
+  border-top                 : none;
+}
+.sticky::before {
+  content  : "";
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  width    : 100%;
+  height   : 100%;
+  z-index  : -1;
+}
+
+/* アコーディオンメニュー（カラオケ・月） */
+summary.karaoke-1 {
+  display       : block; /* 三角マークを消す */
+  border-bottom : 4px solid saddlebrown;
+  color         : saddlebrown;
+}
+details[open] > summary.karaoke-1 {
+  display          : block  ; /* 三角マークを消す */
+  border-bottom    : 5px solid saddlebrown;
+  border-top       : 4px solid saddlebrown;
+  color            : saddlebrown;
+  background-color : PowderBlue;
+}
+/* アコーディオンメニュー（カラオケ・日） */
+summary.karaoke-2 {
+  display          : block; /* 三角マークを消す */
+  border-bottom    : 3px solid PowderBlue;
+  color            : saddlebrown;
+}
+details[open] > summary.karaoke-2 {
+  display          : block; /* 三角マークを消す */
+  border-bottom    : 4px solid PowderBlue;
+  border-top       : 3px solid PowderBlue;
+  color            : saddlebrown;
+  background-color : mintcream;
+}
+
+/* 90点以上 */
+tr.over-90 {
+  background-color : mistyrose;
+}
+/* 85点以下 */
+tr.under-85 {
+  background-color : lightcyan;
+}
