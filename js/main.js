@@ -1,7 +1,7 @@
 function pwpage(){
   var pw = prompt('パスワードを入力してください。');
   if(pw == "あいうえお") {
-    location.href="../docs_mypage./mypage.html";
+    location.href="mypage.html";
   } else {
     return;
   }
