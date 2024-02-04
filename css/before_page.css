@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* スクロールボックス */
+.box {
+  width      : 100%;                  /* 横幅を200pxに指定 */
+  height     : 75px;                  /* 横幅を200pxに指定 */
+  border     : 1px solid saddlebrown; /* わかりやすくボーダーを引く */
+  overflow-y : scroll;                /* 縦方向にスクロール可能にする */
+}
+
+/* 更新ログ */
+table.upd {
+  border       : none;
+  width        : 100%;
+  table-layout : fixed;
+}
+td.upd {
+  border-bottom  : 1px solid gainsboro;
+  text-align     : left;
+  vertical-align : top;
+}
+
+/* アコーディオンメニュー */
+details.accordion > summary {
+  color     : saddlebrown;
+  font-size : 18px;
+}

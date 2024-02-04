@@ -3,7 +3,7 @@
 .table_box{
   overflow-y                 : auto;
   height                     : 150px;
-  width                      :100%;
+  width                      : 100%;
   -webkit-overflow-scrolling : touch;
 }
 .sticky {
@@ -29,7 +29,7 @@ summary.karaoke-1 {
   color         : saddlebrown;
 }
 details[open] > summary.karaoke-1 {
-  display          : block  ; /* 三角マークを消す */
+  display          : block; /* 三角マークを消す */
   border-bottom    : 5px solid saddlebrown;
   border-top       : 4px solid saddlebrown;
   color            : saddlebrown;

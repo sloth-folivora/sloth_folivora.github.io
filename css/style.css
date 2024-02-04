@@ -7,11 +7,6 @@ div.container {
   padding-bottom : 60px;
   box-sizing     : border-box;
 }
-
-header {
-  width            : 100%;
-  background-color : yellow;
-}
 div.main {
   margin :10px;
 }
@@ -84,6 +79,7 @@ td.record {
   color          : saddlebrown;
   border         : 1px solid saddlebrown;
   padding        : 5px;
+  font-size      : 18px;
 }
 td.bold-b {
   border-bottom : 2px solid saddlebrown;
@@ -99,7 +95,8 @@ td.cnt::before {
   padding          : 5px 20px;
   margin           : 5px;
   width            : 150px;
-  font-size        : 15px;
+  font-size        : 18px;
+  font-weight      : bold;
   color            : saddlebrown;
   text-decoration  : none;
   user-select      : none;
@@ -107,4 +104,13 @@ td.cnt::before {
   border-right     : 10px double saddlebrown;
   background-color : PowderBlue;
   box-shadow       : 4px 0px 0px PowderBlue;
+}
+
+/* 区切り線 */
+hr.gradation {
+	position         : relative;
+	height           : 1px;
+	border-width     : 0;
+	background-image : -webkit-linear-gradient(left, transparent 0%, Teal 50%, transparent 100%);
+	background-image : linear-gradient(90deg, transparent 0%, Teal 50%, transparent 100%);
 }

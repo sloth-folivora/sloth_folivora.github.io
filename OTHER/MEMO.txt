@@ -1,0 +1,9 @@
+Gitコマンド　コンソールから
+強制fetch
+git checkout -f <BRANCH>
+
+フェッチ
+git fetch
+
+ブランチ確認
+git branch -a
