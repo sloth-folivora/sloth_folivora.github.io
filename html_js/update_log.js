@@ -1,6 +1,10 @@
 var html =  '<div class="box">';
     html += '  <table class="upd">';
     html += '    <tr>';
+    html += '      <td class="upd">2024/03/31</td>';
+    html += '      <td class="upd">今月ページ：記録更新。（～3/19分）</td>';
+    html += '    </tr>';
+    html += '    <tr>';
     html += '      <td class="upd">2024/03/04</td>';
     html += '      <td class="upd">今月ページ：記録更新。（本・漫画・映画）</td>';
     html += '    </tr>';
